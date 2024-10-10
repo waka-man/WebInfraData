@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Interaction Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meeting Interaction Summary</h1>
+        <nav id="nav-links"></nav>
+    </header>
+    
+    <main>
+        <div id="summary-container">
+            <h2 id="page-title">Aggregate Data</h2>
+            <div id="charts-container">
+                <!-- This will only display charts if there is data available -->
+                <div class="chart-wrapper">
+                    <canvas id="interactionChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="participationChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="horizontalInteractionChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="participationOverTimeChart"></canvas>
+                </div>
+            </div>
+            <div id="interaction-table-container">
+                <h3>Interaction Table</h3>
+                <div id="interaction-table"></div>
+            </div>
+            <div id="non-participants">
+                <h3>Non-Participants</h3>
+                <ul id="nonParticipantsList" class="centered-list"></ul>
+            </div>
+            <div id="special-student-chart-container">
+                <h3>Special Students Interaction Chart</h3>
+                <canvas id="specialStudentsChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart_handler.js"></script>
+</body>
+</html>
